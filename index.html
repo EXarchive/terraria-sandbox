@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>方块地心 · 泰拉瑞亚风格 2D 沙盒</title>
+<link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+<div id="game">
+  <canvas id="world"></canvas>
+
+  <div id="hud">
+    <div class="hud-block">
+      <div class="hud-label">坐标</div>
+      <div class="hud-value" id="hud-pos">0, 0</div>
+    </div>
+    <div class="hud-block">
+      <div class="hud-label">深度</div>
+      <div class="hud-value" id="hud-depth">地表</div>
+    </div>
+    <div class="hud-block">
+      <div class="hud-label">时间</div>
+      <div class="hud-value" id="hud-time">06:00</div>
+    </div>
+    <div class="hud-block">
+      <div class="hud-label">FPS</div>
+      <div class="hud-value" id="hud-fps">0</div>
+    </div>
+  </div>
+
+  <div id="hotbar"></div>
+
+  <div id="hint">
+    <b>A / D</b> 移动 · <b>空格</b> 跳跃 · <b>左键</b> 挖掘 · <b>右键</b> 放置 ·
+    <b>1-9</b> 切换方块 · <b>F5</b> 重开世界
+  </div>
+
+  <div id="inventory-panel">
+    <div class="inv-title">背包</div>
+    <div id="inventory-list"></div>
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
